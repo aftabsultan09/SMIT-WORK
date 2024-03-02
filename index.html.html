@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Introduction</title>
+</head>
+<body>
+
+<h1>My Introduction </h1>
+<img src="images/IMG-20210514-WA0003.jpg" width="150" height="200" >
+    <h2>Aftab Sultan</h2>
+<button onclick="toggleSection('contact')"> Contact</button>
+<div id="contact" style="display: none;">
+    <p><img src="images/gmail.png"> aftabsultan09@gmail.com<Br><img src="images/phone.png" > +92 3499459169.</p>
+</div>
+
+<button onclick="toggleSection('intro')">Introduction</button>
+<div id="intro" style="display: none;">
+    <p>My name Is Aftab Sultan and I am Resident of Swat ,currently doing my BS in Computer Science From University of Agriculture. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum aperiam commodi, tempora quod sunt ex nostrum, voluptatibus enim ratione, nam incidunt similique voluptatem delectus architecto nemo amet? Eaque, non repudiandae.</p>
+</div>
+
+<button onclick="toggleSection('hobbies')">Hobbies</button>
+<div id="hobbies" style="display: none;">
+    <p>Exploring<Br>Learning<Br>chating <Br>reading Quotes and Novels.</p>
+</div>
+
+<script>
+    function toggleSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section.style.display === "none") {
+            section.style.display = "block";
+        } else {
+            section.style.display = "none";
+        }
+    }
+</script>
+<h1>Table formation</h1>
+<table>
+    <style>
+        table, th, td {
+          border: 1px solid;
+        }
+        </style>
+    <thead>
+        <th> names </th>
+        <th> qualification </th>
+        <th> experience</th>
+        <th> skills</th>
+    </thead>
+
+<tbody>
+        <td>Aftab</tD> 
+       <td> 2nd year</td>
+        <td> 1 year</td>
+        <td> data entry</td>
+<tr>
+<td> Sultan </td> 
+<td> BS CS</td>
+<td> 1.5 years</td>
+<td> Logo Design</td>
+</tr>
+       <tr>
+        <td>stooray</td>
+        <td>  BS CS</td>
+        <td> 3 years</td>
+        <td> front-end-developer</td>
+        
+       </tr>
+</tbody>
+<tfoot>
+    <td> shakeel</td>
+    <td> BS CS </td>
+    <td> 8 years</td>
+    <td> database management</td>
+</tfoot>
+</table>
+</body>
+</html>
